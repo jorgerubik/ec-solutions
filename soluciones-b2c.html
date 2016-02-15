@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+     <link rel="shortcut icon" href="imagenes/favicon-ec.ico">
+    <title>EC-Solutions</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+    <!-- Custom CSS -->
+    <link href="css/full-slider.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.stellar.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script>
+        $.stellar();
+        
+    </script>
+<script>
+   // $(function(){
+   //  $(window).scroll(function(event) {
+
+   //         // scrollTop la posición del elemento
+   //         var position = $(window).scrollTop();
+   //         var menu = $("#menu-principal");
+   //         //var logodesktop = $("#logo-desktop");
+   //         //var logophone = $("#logo-phone");
+   //         var font = $("#font-blanco");
+   //         var fonta = $("#font-blancoa");
+   //         var fontb = $("#font-blancob");
+   //         var fontc = $("#font-blancoc");
+   //         var fontd = $("#font-blancod");
+   //         var fonte = $("#font-blancoe");
+   //         var correo = $("#font-blanca");
+   //         var caret = $("#font-carret");
+   //         var nav = $("#nav-bar");
+   //         var idioma = $("#idioma");
+   //         // dependiendo el lugar de la pantalla
+   //         // modificamos la clase del header
+   //         // par cambiar su color de fondo
+   //         if (position == 0) {
+   //             menu.addClass("navbar-proteak-intop").removeClass("navbar-proteak-inbot");
+   //             // logodesktop.addClass("esconde").removeClass("muestra");
+   //             // logophone.addClass("esconde").removeClass("muestra");
+   //             font.addClass("font-blanca").removeClass("sitioweb");
+   //             fonta.addClass("font-blanca").removeClass("sitioweb");
+   //             fontb.addClass("font-blanca").removeClass("sitioweb");
+   //             fontc.addClass("font-blanca").removeClass("sitioweb");
+   //             fontd.addClass("font-blanca").removeClass("sitioweb");
+   //             fonte.addClass("font-blanca").removeClass("sitioweb");
+   //             correo.addClass("font-blanca").removeClass("correo");
+   //             caret.addClass("font-blanca").removeClass("carret-normal");
+   //             nav.addClass("navbar-right-g").removeClass("navbar-right-b");
+   //             idioma.addClass("idioma-b").removeClass("idioma-g");
+   //         } else {
+   //             menu.addClass("navbar-proteak-inbot").removeClass("navbar-proteak-intop");
+   //             // logodesktop.addClass("muestra").removeClass("esconde");
+   //             // logophone.addClass("muestra").removeClass("esconde");
+   //             font.addClass("sitioweb").removeClass("font-blanca");
+   //             fonta.addClass("sitioweb").removeClass("font-blanca");
+   //             fontb.addClass("sitioweb").removeClass("font-blanca");
+   //             fontc.addClass("sitioweb").removeClass("font-blanca");
+   //             fontd.addClass("sitioweb").removeClass("font-blanca");
+   //             fonte.addClass("sitioweb").removeClass("font-blanca");
+   //             correo.addClass("correo").removeClass("font-blanca");
+   //             caret.addClass("carret-normal").removeClass("font-blanca");
+   //             nav.addClass("navbar-right-b").removeClass("navbar-right-g");
+   //             idioma.addClass("idioma-g").removeClass("idioma-b");
+   //         }
+   //     });
+   // });
+  </script>
+  <script>
+  /*
+   var clic = 1;
+ function mostrar(){ 
+    if(clic==1){
+    document.getElementById("opcion1").style.display = "block";
+    document.getElementById("opcion2").style.display = "none";
+    document.getElementById("opcion3").style.display = "none";
+    document.getElementById("opcion4").style.display = "none";
+    document.getElementById("opcion5").style.display = "none";
+    document.getElementById("opcion6").style.display = "none";
+    document.getElementById("opcion7").style.display = "none";
+    document.getElementById("imagen-logo").style.display = "none";
+   
+    } 
+   
+ };
+ function mostrar2(){ 
+    if(clic==1){
+    document.getElementById("opcion2").style.display = "block";
+    document.getElementById("opcion1").style.display = "none";
+    document.getElementById("opcion3").style.display = "none";
+   document.getElementById("opcion4").style.display = "none";
+    document.getElementById("opcion5").style.display = "none";
+    document.getElementById("opcion6").style.display = "none";
+    document.getElementById("opcion7").style.display = "none";
+    document.getElementById("imagen-logo").style.display = "none";
+    }   
+  
+ }
+ function mostrar3(){ 
+    if(clic==1){
+    document.getElementById("opcion3").style.display = "block";
+    document.getElementById("opcion1").style.display = "none";
+    document.getElementById("opcion2").style.display = "none";
+   document.getElementById("opcion4").style.display = "none";
+    document.getElementById("opcion5").style.display = "none";
+    document.getElementById("opcion6").style.display = "none";
+    document.getElementById("opcion7").style.display = "none";
+    document.getElementById("imagen-logo").style.display = "none";
+    } 
+  }
+    function mostrar4(){ 
+    if(clic==1){
+    document.getElementById("opcion4").style.display = "block";
+    document.getElementById("opcion1").style.display = "none";
+    document.getElementById("opcion2").style.display = "none";
+   document.getElementById("opcion3").style.display = "none";
+    document.getElementById("opcion5").style.display = "none";
+    document.getElementById("opcion6").style.display = "none";
+    document.getElementById("opcion7").style.display = "none";
+    document.getElementById("imagen-logo").style.display = "none";
+    } 
+  }
+    function mostrar5(){ 
+    if(clic==1){
+    document.getElementById("opcion5").style.display = "block";
+    document.getElementById("opcion1").style.display = "none";
+    document.getElementById("opcion2").style.display = "none";
+   document.getElementById("opcion4").style.display = "none";
+    document.getElementById("opcion3").style.display = "none";
+    document.getElementById("opcion6").style.display = "none";
+    document.getElementById("opcion7").style.display = "none";
+    document.getElementById("imagen-logo").style.display = "none";
+    } 
+  }
+    function mostrar6(){ 
+    if(clic==1){
+    document.getElementById("opcion6").style.display = "block";
+    document.getElementById("opcion1").style.display = "none";
+    document.getElementById("opcion2").style.display = "none";
+   document.getElementById("opcion4").style.display = "none";
+    document.getElementById("opcion5").style.display = "none";
+    document.getElementById("opcion3").style.display = "none";
+    document.getElementById("opcion7").style.display = "none";
+    document.getElementById("imagen-logo").style.display = "none";
+    } 
+  }
+    function mostrar7(){ 
+    if(clic==1){
+    document.getElementById("opcion7").style.display = "block";
+    document.getElementById("opcion1").style.display = "none";
+    document.getElementById("opcion2").style.display = "none";
+   document.getElementById("opcion4").style.display = "none";
+    document.getElementById("opcion5").style.display = "none";
+    document.getElementById("opcion6").style.display = "none";
+    document.getElementById("opcion3").style.display = "none";
+    document.getElementById("imagen-logo").style.display = "none";
+    }   
+   
+ }*/
+  </script>
+  <script>
+
+    $(document).ready(function(){
+     //$(function(){ 
+      $("#1").click(function(){
+        $("#opcion1").show();
+        $("#opcion3").hide();
+        $("#opcion2").hide();
+        $("#opcion4").hide();
+        $("#opcion5").hide();
+        $("#opcion6").hide();
+        $("#opcion7").hide();
+        $("#imagen-logo").hide();
+      });
+      $("#2").click(function(){
+        $("#opcion2").show();
+        $("#opcion1").hide();
+        $("#opcion3").hide();
+        $("#opcion4").hide();
+        $("#opcion5").hide();
+        $("#opcion6").hide();
+        $("#opcion7").hide();
+        $("#imagen-logo").hide();
+      });
+      $("#3").click(function(){
+        $("#opcion3").show();
+        $("#opcion1").hide();
+        $("#opcion2").hide();
+        $("#opcion4").hide();
+        $("#opcion5").hide();
+        $("#opcion6").hide();
+        $("#opcion7").hide();
+        $("#imagen-logo").hide();
+      });
+      $("#4").click(function(){
+        $("#opcion4").show();
+        $("#opcion1").hide();
+        $("#opcion2").hide();
+        $("#opcion3").hide();
+        $("#opcion5").hide();
+        $("#opcion6").hide();
+        $("#opcion7").hide();
+        $("#imagen-logo").hide();
+      });
+       $("#5").click(function(){
+        $("#opcion5").show();
+        $("#opcion1").hide();
+        $("#opcion2").hide();
+        $("#opcion3").hide();
+        $("#opcion4").hide();
+        $("#opcion6").hide();
+        $("#opcion7").hide();
+        $("#imagen-logo").hide();
+      });
+        $("#6").click(function(){
+        $("#opcion6").show();
+        $("#opcion1").hide();
+        $("#opcion2").hide();
+        $("#opcion3").hide();
+        $("#opcion5").hide();
+        $("#opcion4").hide();
+        $("#opcion7").hide();
+        $("#imagen-logo").hide();
+      });
+         $("#7").click(function(){
+        $("#opcion7").show();
+        $("#opcion1").hide();
+        $("#opcion2").hide();
+        $("#opcion3").hide();
+        $("#opcion5").hide();
+        $("#opcion6").hide();
+        $("#opcion4").hide();
+        $("#imagen-logo").hide();
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default menu-interno navbar-proteak-intop" id="menu-principal">
+  <div class="container-fluid ">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a  href="index-es.html" class="hidden-xs "><img src="imagenes/Logomenu.svg" id="logo-desktop" class="titulo-img" alt="" ></a>
+
+      <a  href="index-es.html"  class="hidden-sm hidden-md hidden-lg "><img src="imagenes/Logomenu.svg" id="logo-phone" class="titulo-img" alt="" ></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right navbar-right-g" id="nav-bar">
+        <li><a href="index-es.html" class="font-blanca" id="font-blanco">Inicio</a></li>
+        <li><a href="soluciones-b2b.html" class="font-blanca" id="font-blancoa">Soluciones B2B</a></li>
+        <li><a href="soluciones-b2c.html" class="font-blanca" id="font-blancob">Soluciones B2C</a></li>
+        <li><a href="soluciones-minoristas.html" class="font-blanca" id="font-blancoc">Soluciones minoristas</a></li>
+        <li><a href="nosotros.html" class="font-blanca" id="font-blancod">Nosotros</a></li>
+        <li><a href="contacto.html" class="font-blanca" id="font-blancoe">Contacto</a></li>
+        <li class="dropdown">
+          <a href="index.htnl" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/bandera_mexico.svg" class="imagenes" alt=""><span class="caret font-blanca" id="font-carret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="index-en.html" class="idioma-b" id="idioma"><img src="images/bandera_eu.svg" class=" imagenes " alt="">English - USA</a></li>
+            
+          </ul>
+        </li>
+        <!-- <li><a href="mailto:crodriguez@proteak.com" class="font-blanca" id="font-blanca"><span class="glyphicon glyphicon-envelope" ></span></a></li> -->
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class=" encabezado-img">
+<div class="row">
+  <div class="col-md-6 titulo-b2b" align="justify">
+    <h1 class="titulo-interior">Una herramienta <br>tecnológica y customizada</h1>
+    <HR width="32%" align="left" class="separador-uno">
+    <HR width="25%" align="right" class="separador-dos">
+  </div>
+</div>
+</div> 
+
+<div class="container">
+ <div class="row soluciones-b2b">
+  <div class="col-md-12 titulo-b2b" align="center">
+    
+     <p class="parrafo-b2c">
+      Con la evolución que ha tenido el E-Commerce en los últimos años, diferentes marcas y diferentes nichos de mercado están visualizando éste canal de comercialización como uno de los grandes pilares en sus estrategias de negocio.  Es también visto como un motor acelerado para el crecimiento.
+     </p>
+     <p class="parrafo-b2c">
+       Tomando en cuenta esto, tenemos soluciones integrales de E-Commerce para tu negocio, divididas en diferentes “módulos o bloques” hechos a la medida de tus necesidades.
+     </p>
+     
+  </div>
+</div>
+<div class="row">
+   <div class="col-md-3">
+     <div class="sidebar-nav">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="visible-xs navbar-brand">Módulos o bloques</span>
+        </div>
+        <div class="navbar-collapse collapse sidebar-navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#" id="1" >Plataforma</a></li>
+            <li><a href="#" id="2" >Marketing</a></li>
+            <li><a href="#" id="3" >Producción</a></li>
+            <li><a href="#" id="4" >Prevención de Fraude</a></li>
+            <li><a href="#" id="5" >Call Center</a></li>
+            <li><a href="#" id="6" >Almacenaje/Distribución</a></li>
+            <li><a href="#" id="7" >Asesoría legal</a></li>
+            
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+   </div>
+   <!-- <div class="col-md-9"> -->
+    <div class="imagen-logo" id="imagen-logo" align="center">
+      <img src="imagenes/logo-seccion.svg" alt="" class="imagen-logo1">
+    </div align="center">
+     <div class="opciones" id="opcion1">
+      <div class="col-md-3 iconos-b2c" align="center">
+        
+      <img src="imagenes/plataforma1.svg" alt="">
+      <h2>Plataforma</h2>
+      </div>
+      <div class="col-md-6 texto-b2c">
+        
+      Llevamos a cabo desde el proyecto de arquitectura de tu tienda, así como el mantenimiento constante desde el punto de vista técnico (servidores, base de datos, diseño, UX, SEO, etc) así como el mantenimiento de tus contenidos de forma diaria.
+      </div>
+     </div>
+     <div class="opciones" id="opcion2">
+        <div class="col-md-3 iconos-b2c">
+          <img src="imagenes/marketing1.svg" alt="">
+          <h2>Marketing</h2> 
+          
+        </div>
+        <div class="col-md-6 texto-b2c">
+          Tenemos dentro de nuestro pool de especialistas, a agencias con una especialidad en Marketing Digital con, probados casos de éxito y en donde parate del compromiso es los resultados finales de tu negocio.
+          
+        </div>
+     </div>
+     <div class="opciones" id="opcion3">
+        <div class="col-md-3 iconos-b2c ">
+          <img src="imagenes/produccion1.svg" alt="">
+          <h2>Producción</h2>
+          
+        </div>
+        <div class="col-md-6 texto-b2c">
+           En EC-Solutions, nos encargamos de facilitarte ciertos procesos vitales para el E-Commerce pero que pueden alejarte de tu foco de negocio.  En este caso, no es la excepción la toma profesional de fotografía.
+          
+        </div>
+     </div>
+     
+      <div class="opciones" id="opcion4">
+        <div class="col-md-3 iconos-b2c">
+          <img src="imagenes/fraude1.svg" alt="">
+          <h2>Prevención de Fraude</h2>
+          
+        </div>
+        <div class="col-md-6 texto-b2c">
+         Vital el poder ayudar a tu negocio tanto a la aceptación de pedidos “genuinos” así como a prevenir transacciones con un orígen fraudulento.
+          
+        </div>
+     </div>
+      <div class="opciones" id="opcion5">
+        <div class="col-md-3 iconos-b2c">
+          <img src="imagenes/callcenter1.svg" alt="">
+          <h2>Call Center</h2>
+          
+        </div>
+        <div class="col-md-6 texto-b2c">
+         A través de nuestro departamento de Servicio a Clientes, es como damos una atención personalizada a tus consumidores.  Desde preguntas sobre fechas de entrega, hasta el manejo de devoluciones de producto, reembolsos, etc.  El Call Center es un medio también, a través del cual el consumidor adquiere confianza para continuar adquiriendo tu producto y/o servicio.
+          
+        </div>
+     </div>
+      <div class="opciones" id="opcion6">
+        <div class="col-md-3 iconos-b2c">
+          <img src="imagenes/almacenaje1.svg" alt="">
+          <h2>Almacenaje/<br>Distribución</h2>
+          
+        </div>
+        <div class="col-md-6 texto-b2c">
+          Uno de los módulos con mayor impacto en la opinión del consumidor sobre su experiencia de compra en E-Commerce es el almacenaje y la distribución.  En estos rubros y siendo EC-Solutions una empresa hermana de Onest Logistics, contamos con una experiencia de más de 12 años en el nicho de servicios logísticos (3PL y 4PL) para mantener la excelencia en el manejo de tus inventarios así como niveles de entrega de clase mundial.
+          
+        </div>
+     </div>
+      <div class="opciones" id="opcion7">
+        <div class="col-md-3 iconos-b2c">
+          <img src="imagenes/asesoria1.svg" alt="">
+          <h2>Asesoría legal</h2>
+          
+        </div>
+        <div class="col-md-6 texto-b2c">
+           No dejando detalle alguno de lado, consideramos como apoyo fundamental a nuestros asesores legales en materia de:  Registro de marcas, protección de datos personales (INAI), relación con PROFECO, etc.
+          
+        </div>
+     </div>
+  </div>   
+   <!-- </div> -->
+   
+   
+     <!--  -->
+    
+   
+
+ 
+        <!-- Footer -->
+        <div class="container footer footer-interno" >
+        <footer>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4" align="center">
+                    <a name="correo"></a>
+                    <img src="imagenes/logofooter.svg" class="img-footer" style="margin-bottom: 40px;">
+                    <p>Llevamos tu negocio del offline al online<p>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row redes-sociales">
+              <div class="col-md-12 text-center">
+                <i class="fa fa-facebook-f"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-youtube-play"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-google-plus"></i>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" align="center">
+                    <p>&copy; 2016 EC Solutions - Derechos Reservados. Aviso de privacidad </p>
+                    <a href="#arriba" class="flecha-arriba">
+                        <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>	
+        <!-- jQuery -->
+    
+    <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="js/bootstrap-image-gallery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+   <script>
+   function toggleChevron(e) {
+    $(e.target)
+        .prev('.panel-heading')
+        .find("i.indicator")
+        .toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+}
+$('#accordion').on('hidden.bs.collapse', toggleChevron);
+$('#accordion').on('shown.bs.collapse', toggleChevron);</script>
+</body>
+</html>
