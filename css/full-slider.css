@@ -52,3 +52,24 @@ body {
 .carousel-indicators{
     text-align: center;
 }
+/**/
+#carrusel-circular li{
+    border-radius: 100% !important;
+    width: 40px;
+    height: 5px;   
+    background-color: gray; 
+    margin-bottom: 30px;
+    border-color: gray;
+}
+
+#carrusel-circular .active{
+    border-radius: 100% !important;
+    margin-bottom: 30px;
+    width: 40px !important;
+    height: 5px !important; 
+    border-color: white;
+
+}
+#carrusel-circular{
+    text-align: right !important;
+}

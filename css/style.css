@@ -809,6 +809,7 @@ input,textarea{
 .img-exitos{
 	max-width: 100%;
 	height: 60px;
+	margin-bottom: 80px;
 }
 @media (max-width: 767px){
 	.img-exitos{
@@ -850,7 +851,7 @@ input,textarea{
 /*B2B*/
 .encabezado-img{
 
-	background-image: url("../imagenes/solucionesB2B.png");
+	background-image: url("../imagenes/B2B.jpg");
 	background-repeat: no-repeat;
 	height: 600px;
 	width: 100%;
@@ -859,7 +860,7 @@ input,textarea{
 @media (max-width: 997px){
 	.encabezado-img{
 	margin-top: -106px;
-	background-image: url("../imagenes/solucionesB2B.png");
+	background-image: url("../imagenes/B2B.jpg");
 	background-repeat: no-repeat;
 	height: 600px;
 	width: 100%;
@@ -983,69 +984,81 @@ input,textarea{
 	margin-top: 100px;
 
 }
+.encabezadocontacto-img{
 
+	background-image: url("../imagenes/CONTACTO.jpg");
+	background-repeat: no-repeat;
+	height: 600px;
+	width: 100%;
+	/**/	
+}
+@media (max-width: 997px){
+	.encabezadocontacto-img{
+	margin-top: -106px;
+	background-image: url("../imagenes/CONTACTO.jpg");
+	background-repeat: no-repeat;
+	height: 600px;
+	width: 100%;
+	/**/	
+}
+}
 
 /****************************/
 /*b2c*/
 /* make sidebar nav vertical */ 
-.sidebar-nav .navbar li a:hover {
-    color: #F97F00 !important;
-  }
-@media (min-width: 768px) {
-  .sidebar-nav .navbar .navbar-collapse {
-    padding: 0;
-    max-height: none;
-  }
-  .sidebar-nav .navbar ul {
-    float: none;
-  }
-  .sidebar-nav .navbar ul:not {
-    display: block;
-  }
-  .sidebar-nav .navbar li {
-    float: none;
-    display: block;
-  }
-  
-  .sidebar-nav .navbar li a {
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
+.encabezadob2c-img{
+
+	background-image: url("../imagenes/B2C.jpg");
+	background-repeat: no-repeat;
+	height: 600px;
+	width: 100%;
+	/**/	
 }
-.imagen-logo1{
-	margin-top: 80px;
-	width: 250px;
-	height: auto;
+@media (max-width: 997px){
+	.encabezadob2c-img{
+	margin-top: -106px;
+	background-image: url("../imagenes/B2C.jpg");
+	background-repeat: no-repeat;
+	height: 600px;
+	width: 100%;
+	/**/	
 }
-.opciones{
-	font-size: 18px;
-	display: none;
-	margin-top: 40px;
-	/*margin-left: 30px;*/
-	/*text-align: center;*/
 }
-.opciones h2{
-	margin-top: 0px !important;
-	color: #3A67B4;
-	text-align: center;
+#carousel-text{
+	background-color: #024468;
+	color: white;
+	height: 400px;
+	padding-top: 100px;
+	padding-right: 50px;
+	padding-left: 50px;
+	text-align: justify !important;
 }
-.iconos-b2c{
-	margin-left: 10px;
-	margin-right: -10px;
-	text-align: center;
+#carrusel-circular li{
+    border-radius: 100% !important;
+    width: 10px;
+    height: 10px;   
+    background-color: gray; 
+    margin-bottom: 0px;
+    border-color: gray;
 }
-.texto-b2c{
-	margin-top: 30px;
-	padding-right: 0px;
+
+#carrusel-circular .active{
+    border-radius: 100% !important;
+    margin-bottom: 0px;
+    width: 10px !important;
+    height: 10px !important; 
+    border-color: white;
+    background-color: white;
+
 }
-.parrafo-b2c{
-	font-size: 18px;
+#carrusel-circular{
+    text-align: right !important;
 }
 
 
 /*parallax*/
 #home { 
-			background: url("../imagenes/home.jpeg") 50% 0 fixed; 
+			background: url("../imagenes/servicios2.jpg") 50% 0 fixed; 
 			height: auto;  
 			margin: 0 auto; 
 		    width: 100%; 
@@ -1054,7 +1067,7 @@ input,textarea{
 		    /*padding: 200px 0;*/
 		}
 		#home2 { 
-			background: url("../imagenes/home2.jpeg") 50% 0 fixed; 
+			background: url("../imagenes/capacidad2.jpg") 50% 0 fixed; 
 			height: auto;  
 			margin: 0 auto; 
 		    width: 100%; 
@@ -1110,6 +1123,107 @@ input,textarea{
 }
 /*minorista********/
 /**********/
-.contenido-interior-minorista{
-	color: black !important;
+.encabezadomin-img{
+
+	background-image: url("../imagenes/B2C.jpg");
+	background-repeat: no-repeat;
+	height: 600px;
+	width: 100%;
+	/**/	
+}
+@media (max-width: 997px){
+	.encabezadomin-img{
+	margin-top: -106px;
+	background-image: url("../imagenes/B2C.jpg");
+	background-repeat: no-repeat;
+	height: 600px;
+	width: 100%;
+	/**/	
+}
+}
+.texto-minoristas{
+	color: black;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 50px;
+	text-align: justify;
+}
+.texto-minoristas h2{
+
+	color: #205A79;
+}
+/*.flecha-prev{
+	right: 0 !important;
+	
+	bottom: 0 !important;
+	margin-right: 50px;
+	background-image: none !important;
+}
+
+.flecha-sig{
+	
+	bottom: 0 !important;
+	background-image: none !important;
+}*/
+
+
+/*right: 0 padding_right: 90px*/
+/*ruben*/
+.encabezadoruben-img{
+
+	background-image: url("../imagenes/RUBENIMAN.jpg");
+	background-repeat: no-repeat;
+	height: 600px;
+	width: 100%;
+	/**/	
+}
+@media (max-width: 997px){
+	.encabezadoruben-img{
+	margin-top: -106px;
+	background-image: url("../imagenes/RUBENIMAN.jpg");
+	background-repeat: no-repeat;
+	height: 600px;
+	width: 100%;
+}
+	/**/	
+}
+
+/*rafael*/
+.encabezadorafa-img{
+
+	background-image: url("../imagenes/RAFELFLORES.jpg");
+	background-repeat: no-repeat;
+	height: 600px;
+	width: 100%;
+	/**/	
+}
+@media (max-width: 997px){
+	.encabezadorafa-img{
+	margin-top: -106px;
+	background-image: url("../imagenes/RAFELFLORES.jpg");
+	background-repeat: no-repeat;
+	height: 600px;
+	width: 100%;
+}
+	/**/	
+}
+
+/*nosotros*/
+.encabezadonosotros-img{
+
+	background-image: url("../imagenes/NOSOTROS.jpg");
+	background-repeat: no-repeat;
+	height: 600px;
+	width: 100%;
+	/**/	
+}
+@media (max-width: 997px){
+	.encabezadonosotros-img{
+	margin-top: -106px;
+	background-image: url("../imagenes/NOSOTROS.jpg");
+	background-repeat: no-repeat;
+	height: 600px;
+	width: 100%;
+}
+	/**/	
 }
