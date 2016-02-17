@@ -1,444 +1,57 @@
-<!DOCTYPE html>
 <html>
 <head>
-	 <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-     <link rel="shortcut icon" href="imagenes/favicon-ec.ico">
-    <title>EC-Solutions</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
-    <!-- Custom CSS -->
-    <link href="css/full-slider.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.stellar.js"></script>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-    <script>
-        $.stellar();
-        
-    </script>
-<script>
-   // $(function(){
-   //  $(window).scroll(function(event) {
-
-   //         // scrollTop la posición del elemento
-   //         var position = $(window).scrollTop();
-   //         var menu = $("#menu-principal");
-   //         //var logodesktop = $("#logo-desktop");
-   //         //var logophone = $("#logo-phone");
-   //         var font = $("#font-blanco");
-   //         var fonta = $("#font-blancoa");
-   //         var fontb = $("#font-blancob");
-   //         var fontc = $("#font-blancoc");
-   //         var fontd = $("#font-blancod");
-   //         var fonte = $("#font-blancoe");
-   //         var correo = $("#font-blanca");
-   //         var caret = $("#font-carret");
-   //         var nav = $("#nav-bar");
-   //         var idioma = $("#idioma");
-   //         // dependiendo el lugar de la pantalla
-   //         // modificamos la clase del header
-   //         // par cambiar su color de fondo
-   //         if (position == 0) {
-   //             menu.addClass("navbar-proteak-intop").removeClass("navbar-proteak-inbot");
-   //             // logodesktop.addClass("esconde").removeClass("muestra");
-   //             // logophone.addClass("esconde").removeClass("muestra");
-   //             font.addClass("font-blanca").removeClass("sitioweb");
-   //             fonta.addClass("font-blanca").removeClass("sitioweb");
-   //             fontb.addClass("font-blanca").removeClass("sitioweb");
-   //             fontc.addClass("font-blanca").removeClass("sitioweb");
-   //             fontd.addClass("font-blanca").removeClass("sitioweb");
-   //             fonte.addClass("font-blanca").removeClass("sitioweb");
-   //             correo.addClass("font-blanca").removeClass("correo");
-   //             caret.addClass("font-blanca").removeClass("carret-normal");
-   //             nav.addClass("navbar-right-g").removeClass("navbar-right-b");
-   //             idioma.addClass("idioma-b").removeClass("idioma-g");
-   //         } else {
-   //             menu.addClass("navbar-proteak-inbot").removeClass("navbar-proteak-intop");
-   //             // logodesktop.addClass("muestra").removeClass("esconde");
-   //             // logophone.addClass("muestra").removeClass("esconde");
-   //             font.addClass("sitioweb").removeClass("font-blanca");
-   //             fonta.addClass("sitioweb").removeClass("font-blanca");
-   //             fontb.addClass("sitioweb").removeClass("font-blanca");
-   //             fontc.addClass("sitioweb").removeClass("font-blanca");
-   //             fontd.addClass("sitioweb").removeClass("font-blanca");
-   //             fonte.addClass("sitioweb").removeClass("font-blanca");
-   //             correo.addClass("correo").removeClass("font-blanca");
-   //             caret.addClass("carret-normal").removeClass("font-blanca");
-   //             nav.addClass("navbar-right-b").removeClass("navbar-right-g");
-   //             idioma.addClass("idioma-g").removeClass("idioma-b");
-   //         }
-   //     });
-   // });
-  </script>
-  <script>
-  /*
-   var clic = 1;
- function mostrar(){ 
-    if(clic==1){
-    document.getElementById("opcion1").style.display = "block";
-    document.getElementById("opcion2").style.display = "none";
-    document.getElementById("opcion3").style.display = "none";
-    document.getElementById("opcion4").style.display = "none";
-    document.getElementById("opcion5").style.display = "none";
-    document.getElementById("opcion6").style.display = "none";
-    document.getElementById("opcion7").style.display = "none";
-    document.getElementById("imagen-logo").style.display = "none";
-   
-    } 
-   
- };
- function mostrar2(){ 
-    if(clic==1){
-    document.getElementById("opcion2").style.display = "block";
-    document.getElementById("opcion1").style.display = "none";
-    document.getElementById("opcion3").style.display = "none";
-   document.getElementById("opcion4").style.display = "none";
-    document.getElementById("opcion5").style.display = "none";
-    document.getElementById("opcion6").style.display = "none";
-    document.getElementById("opcion7").style.display = "none";
-    document.getElementById("imagen-logo").style.display = "none";
-    }   
+<meta charset=utf-8 />
+<title>CSS Image Tint</title>
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
   
- }
- function mostrar3(){ 
-    if(clic==1){
-    document.getElementById("opcion3").style.display = "block";
-    document.getElementById("opcion1").style.display = "none";
-    document.getElementById("opcion2").style.display = "none";
-   document.getElementById("opcion4").style.display = "none";
-    document.getElementById("opcion5").style.display = "none";
-    document.getElementById("opcion6").style.display = "none";
-    document.getElementById("opcion7").style.display = "none";
-    document.getElementById("imagen-logo").style.display = "none";
-    } 
+  .tint {
+    position: relative;
+    float: left;
+    width:75px;
+    height:75px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    -webkit-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+    -moz-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+    box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
   }
-    function mostrar4(){ 
-    if(clic==1){
-    document.getElementById("opcion4").style.display = "block";
-    document.getElementById("opcion1").style.display = "none";
-    document.getElementById("opcion2").style.display = "none";
-   document.getElementById("opcion3").style.display = "none";
-    document.getElementById("opcion5").style.display = "none";
-    document.getElementById("opcion6").style.display = "none";
-    document.getElementById("opcion7").style.display = "none";
-    document.getElementById("imagen-logo").style.display = "none";
-    } 
+  
+  .tint:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(236, 126, 40, 0.6);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
   }
-    function mostrar5(){ 
-    if(clic==1){
-    document.getElementById("opcion5").style.display = "block";
-    document.getElementById("opcion1").style.display = "none";
-    document.getElementById("opcion2").style.display = "none";
-   document.getElementById("opcion4").style.display = "none";
-    document.getElementById("opcion3").style.display = "none";
-    document.getElementById("opcion6").style.display = "none";
-    document.getElementById("opcion7").style.display = "none";
-    document.getElementById("imagen-logo").style.display = "none";
-    } 
+  
+  .tint:hover:before {
+    content: "";
+    background: none;
   }
-    function mostrar6(){ 
-    if(clic==1){
-    document.getElementById("opcion6").style.display = "block";
-    document.getElementById("opcion1").style.display = "none";
-    document.getElementById("opcion2").style.display = "none";
-   document.getElementById("opcion4").style.display = "none";
-    document.getElementById("opcion5").style.display = "none";
-    document.getElementById("opcion3").style.display = "none";
-    document.getElementById("opcion7").style.display = "none";
-    document.getElementById("imagen-logo").style.display = "none";
-    } 
-  }
-    function mostrar7(){ 
-    if(clic==1){
-    document.getElementById("opcion7").style.display = "block";
-    document.getElementById("opcion1").style.display = "none";
-    document.getElementById("opcion2").style.display = "none";
-   document.getElementById("opcion4").style.display = "none";
-    document.getElementById("opcion5").style.display = "none";
-    document.getElementById("opcion6").style.display = "none";
-    document.getElementById("opcion3").style.display = "none";
-    document.getElementById("imagen-logo").style.display = "none";
-    }   
-   
- }*/
-  </script>
-  <script>
-
-    $(document).ready(function(){
-     //$(function(){ 
-      $("#1").click(function(){
-        $("#opcion1").show();
-        $("#opcion3").hide();
-        $("#opcion2").hide();
-        $("#opcion4").hide();
-        $("#opcion5").hide();
-        $("#opcion6").hide();
-        $("#opcion7").hide();
-        $("#imagen-logo").hide();
-      });
-      $("#2").click(function(){
-        $("#opcion2").show();
-        $("#opcion1").hide();
-        $("#opcion3").hide();
-        $("#opcion4").hide();
-        $("#opcion5").hide();
-        $("#opcion6").hide();
-        $("#opcion7").hide();
-        $("#imagen-logo").hide();
-      });
-      $("#3").click(function(){
-        $("#opcion3").show();
-        $("#opcion1").hide();
-        $("#opcion2").hide();
-        $("#opcion4").hide();
-        $("#opcion5").hide();
-        $("#opcion6").hide();
-        $("#opcion7").hide();
-        $("#imagen-logo").hide();
-      });
-      $("#4").click(function(){
-        $("#opcion4").show();
-        $("#opcion1").hide();
-        $("#opcion2").hide();
-        $("#opcion3").hide();
-        $("#opcion5").hide();
-        $("#opcion6").hide();
-        $("#opcion7").hide();
-        $("#imagen-logo").hide();
-      });
-       $("#5").click(function(){
-        $("#opcion5").show();
-        $("#opcion1").hide();
-        $("#opcion2").hide();
-        $("#opcion3").hide();
-        $("#opcion4").hide();
-        $("#opcion6").hide();
-        $("#opcion7").hide();
-        $("#imagen-logo").hide();
-      });
-        $("#6").click(function(){
-        $("#opcion6").show();
-        $("#opcion1").hide();
-        $("#opcion2").hide();
-        $("#opcion3").hide();
-        $("#opcion5").hide();
-        $("#opcion4").hide();
-        $("#opcion7").hide();
-        $("#imagen-logo").hide();
-      });
-         $("#7").click(function(){
-        $("#opcion7").show();
-        $("#opcion1").hide();
-        $("#opcion2").hide();
-        $("#opcion3").hide();
-        $("#opcion5").hide();
-        $("#opcion6").hide();
-        $("#opcion4").hide();
-        $("#imagen-logo").hide();
-      });
-    });
-  </script>
-
+  
+ 
+</style>
 </head>
-
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-default menu-interno navbar-proteak-intop" id="menu-principal">
-  <div class="container-fluid ">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a  href="index-es.html" class="hidden-xs "><img src="imagenes/Logomenu.svg" id="logo-desktop" class="titulo-img" alt="" ></a>
-
-      <a  href="index-es.html"  class="hidden-sm hidden-md hidden-lg "><img src="imagenes/Logomenu.svg" id="logo-phone" class="titulo-img" alt="" ></a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right navbar-right-g" id="nav-bar">
-        <li><a href="index-es.html" class="font-blanca" id="font-blanco">Inicio</a></li>
-        <li><a href="soluciones-b2b.html" class="font-blanca" id="font-blancoa">Soluciones B2B</a></li>
-        <li><a href="soluciones-b2c.html" class="font-blanca" id="font-blancob">Soluciones B2C</a></li>
-        <li><a href="soluciones-minoristas.html" class="font-blanca" id="font-blancoc">Soluciones minoristas</a></li>
-        <li><a href="nosotros.html" class="font-blanca" id="font-blancod">Nosotros</a></li>
-        <li><a href="contacto.html" class="font-blanca" id="font-blancoe">Contacto</a></li>
-        <li class="dropdown">
-          <a href="index.htnl" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/bandera_mexico.svg" class="imagenes" alt=""><span class="caret font-blanca" id="font-carret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="index-en.html" class="idioma-b" id="idioma"><img src="images/bandera_eu.svg" class=" imagenes " alt="">English - USA</a></li>
-            
-          </ul>
-        </li>
-        <!-- <li><a href="mailto:crodriguez@proteak.com" class="font-blanca" id="font-blanca"><span class="glyphicon glyphicon-envelope" ></span></a></li> -->
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-<div class="container b2b-seccion3">
-        <div id="main_area">
-                <!-- Slider -->
-                <div class="row contenedor-imagenes">
-                    <div class="col-xs-12" id="slider">
-                        <!-- Top part of the slider -->
-                        <div class="row">
-                            <div class="col-md-6 img-b2b" id="carousel-bounding-box">
-                                <div class="carousel slide" id="myCarousel">
-                                    <!-- Carousel items -->
-                                    <div class="carousel-inner">
-                                        <div class="active item" data-slide-number="0">
-                                        <img src="http://placehold.it/770x300&text=one"></div>
-
-                                        <div class="item" data-slide-number="1">
-                                        <img src="http://placehold.it/770x300&text=two"></div>
-
-                                        <div class="item" data-slide-number="2">
-                                        <img src="http://placehold.it/770x300&text=three"></div>
-
-                                        <div class="item" data-slide-number="3">
-                                        <img src="http://placehold.it/770x300&text=four"></div>
-
-                                        <div class="item" data-slide-number="4">
-                                        <img src="http://placehold.it/770x300&text=five"></div>
-
-                                        <div class="item" data-slide-number="5">
-                                        <img src="http://placehold.it/770x300&text=six"></div>
-                                    </div><!-- Carousel nav -->
-                                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>                                       
-                                    </a>
-                                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right"></span>                                       
-                                    </a>                                
-                                    </div>
-                            </div>
-
-                            <div class="col-md-6 img-b2b" id="carousel-text"></div>
-
-                            <div id="slide-content" style="display: none;">
-                                <div id="slide-content-0">
-                                    <h2>Slider One</h2>
-                                    <p>Lorem Ipsum Dolor</p>
-                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
-                                </div>
-
-                                <div id="slide-content-1">
-                                    <h2>Slider Two</h2>
-                                    <p>Lorem Ipsum Dolor</p>
-                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
-                                </div>
-
-                                <div id="slide-content-2">
-                                    <h2>Slider Three</h2>
-                                    <p>Lorem Ipsum Dolor</p>
-                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
-                                </div>
-
-                                <div id="slide-content-3">
-                                    <h2>Slider Four</h2>
-                                    <p>Lorem Ipsum Dolor</p>
-                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
-                                </div>
-
-                                <div id="slide-content-4">
-                                    <h2>Slider Five</h2>
-                                    <p>Lorem Ipsum Dolor</p>
-                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
-                                </div>
-
-                                <div id="slide-content-5">
-                                    <h2>Slider Six</h2>
-                                    <p>Lorem Ipsum Dolor</p>
-                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/Slider-->
-
-              
-        </div>
-</div>
-
- 
-        <!-- Footer -->
-        <div class="container footer footer-interno" >
-        <footer>
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4" align="center">
-                    <a name="correo"></a>
-                    <img src="imagenes/logofooter.svg" class="img-footer" style="margin-bottom: 40px;">
-                    <p>Llevamos tu negocio del offline al online<p>
-                </div>
-                <div class="col-md-4"></div>
-            </div>
-            <div class="row redes-sociales">
-              <div class="col-md-12 text-center">
-                <i class="fa fa-facebook-f"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-youtube-play"></i>
-                <i class="fa fa-linkedin"></i>
-                <i class="fa fa-google-plus"></i>
-              </div>
-            </div>
-            <div class="row footer-2">
-                <div class="col-md-12" align="center">
-                    <p>&copy; 2016 EC Solutions - Derechos Reservados. Aviso de privacidad </p>
-                    <a href="#arriba" class="flecha-arriba">
-                        <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
-                    </a>
-                </div>
-            </div>
-            <!-- /.row -->
-        </footer> 
-        <!-- jQuery -->
     
-    <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-    <script src="js/bootstrap-image-gallery.min.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-   <script>
-    jQuery(document).ready(function($) {
- 
-        $('#myCarousel').carousel({
-                interval: 5000
-        });
- 
-        $('#carousel-text').html($('#slide-content-0').html());
- 
-        //Handles the carousel thumbnails
-       $('[id^=carousel-selector-]').click( function(){
-            var id = this.id.substr(this.id.lastIndexOf("-") + 1);
-            var id = parseInt(id);
-            $('#myCarousel').carousel(id);
-        });
  
  
-        // When the carousel slides, auto update the text
-        $('#myCarousel').on('slid.bs.carousel', function (e) {
-                 var id = $('.item.active').data('slide-number');
-                $('#carousel-text').html($('#slide-content-'+id).html());
-        });
-});</script>
+  <div class="tint">
+      <img src="imagenes/ruben.jpeg" width="75" height="75" />
+  </div>
+ 
+  
 </body>
 </html>
