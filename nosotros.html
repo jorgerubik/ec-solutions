@@ -33,64 +33,64 @@
     </script>
 <script>
 
-   // $(function(){
-   //  $(window).scroll(function(event) {
+   $(function(){
+    $(window).scroll(function(event) {
 
-   //         // scrollTop la posición del elemento
-   //         var position = $(window).scrollTop();
-   //         var menu = $("#menu-principal");
-   //         //var logodesktop = $("#logo-desktop");
-   //         //var logophone = $("#logo-phone");
-   //         var font = $("#font-blanco");
-   //         var fonta = $("#font-blancoa");
-   //         var fontb = $("#font-blancob");
-   //         var fontc = $("#font-blancoc");
-   //         var fontd = $("#font-blancod");
-   //         var fonte = $("#font-blancoe");
-   //         var correo = $("#font-blanca");
-   //         var caret = $("#font-carret");
-   //         var nav = $("#nav-bar");
-   //         var idioma = $("#idioma");
-   //         // dependiendo el lugar de la pantalla
-   //         // modificamos la clase del header
-   //         // par cambiar su color de fondo
-   //         if (position == 0) {
-   //             menu.addClass("navbar-proteak-intop").removeClass("navbar-proteak-inbot");
-   //             // logodesktop.addClass("esconde").removeClass("muestra");
-   //             // logophone.addClass("esconde").removeClass("muestra");
-   //             font.addClass("font-blanca").removeClass("sitioweb");
-   //             fonta.addClass("font-blanca").removeClass("sitioweb");
-   //             fontb.addClass("font-blanca").removeClass("sitioweb");
-   //             fontc.addClass("font-blanca").removeClass("sitioweb");
-   //             fontd.addClass("font-blanca").removeClass("sitioweb");
-   //             fonte.addClass("font-blanca").removeClass("sitioweb");
-   //             correo.addClass("font-blanca").removeClass("correo");
-   //             caret.addClass("font-blanca").removeClass("carret-normal");
-   //             nav.addClass("navbar-right-g").removeClass("navbar-right-b");
-   //             idioma.addClass("idioma-b").removeClass("idioma-g");
-   //         } else {
-   //             menu.addClass("navbar-proteak-inbot").removeClass("navbar-proteak-intop");
-   //             // logodesktop.addClass("muestra").removeClass("esconde");
-   //             // logophone.addClass("muestra").removeClass("esconde");
-   //             font.addClass("sitioweb").removeClass("font-blanca");
-   //             fonta.addClass("sitioweb").removeClass("font-blanca");
-   //             fontb.addClass("sitioweb").removeClass("font-blanca");
-   //             fontc.addClass("sitioweb").removeClass("font-blanca");
-   //             fontd.addClass("sitioweb").removeClass("font-blanca");
-   //             fonte.addClass("sitioweb").removeClass("font-blanca");
-   //             correo.addClass("correo").removeClass("font-blanca");
-   //             caret.addClass("carret-normal").removeClass("font-blanca");
-   //             nav.addClass("navbar-right-b").removeClass("navbar-right-g");
-   //             idioma.addClass("idioma-g").removeClass("idioma-b");
-   //         }
-   //     });
-   // });
+           // scrollTop la posición del elemento
+           var position = $(window).scrollTop();
+           var menu = $("#menu-principal");
+           //var logodesktop = $("#logo-desktop");
+           //var logophone = $("#logo-phone");
+           var font = $("#font-blanco");
+           var fonta = $("#font-blancoa");
+           var fontb = $("#font-blancob");
+           var fontc = $("#font-blancoc");
+           var fontd = $("#font-blancod");
+           var fonte = $("#font-blancoe");
+           var correo = $("#font-blanca");
+           var caret = $("#font-carret");
+           var nav = $("#nav-bar");
+           var idioma = $("#idioma");
+           // dependiendo el lugar de la pantalla
+           // modificamos la clase del header
+           // par cambiar su color de fondo
+           if (position == 0) {
+               menu.addClass("navbar-proteak-intop").removeClass("navbar-proteak-inbot");
+               // logodesktop.addClass("esconde").removeClass("muestra");
+               // logophone.addClass("esconde").removeClass("muestra");
+               font.addClass("font-blanca").removeClass("sitioweb");
+               fonta.addClass("font-blanca").removeClass("sitioweb");
+               fontb.addClass("font-blanca").removeClass("sitioweb");
+               fontc.addClass("font-blanca").removeClass("sitioweb");
+               fontd.addClass("font-blanca").removeClass("sitioweb");
+               fonte.addClass("font-blanca").removeClass("sitioweb");
+               correo.addClass("font-blanca").removeClass("correo");
+               caret.addClass("font-blanca").removeClass("carret-normal");
+               nav.addClass("navbar-right-g").removeClass("navbar-right-b");
+               idioma.addClass("idioma-b").removeClass("idioma-g");
+           } else {
+               menu.addClass("navbar-proteak-inbot").removeClass("navbar-proteak-intop");
+               // logodesktop.addClass("muestra").removeClass("esconde");
+               // logophone.addClass("muestra").removeClass("esconde");
+               font.addClass("sitioweb").removeClass("font-blanca");
+               fonta.addClass("sitioweb").removeClass("font-blanca");
+               fontb.addClass("sitioweb").removeClass("font-blanca");
+               fontc.addClass("sitioweb").removeClass("font-blanca");
+               fontd.addClass("sitioweb").removeClass("font-blanca");
+               fonte.addClass("sitioweb").removeClass("font-blanca");
+               correo.addClass("correo").removeClass("font-blanca");
+               caret.addClass("carret-normal").removeClass("font-blanca");
+               nav.addClass("navbar-right-b").removeClass("navbar-right-g");
+               idioma.addClass("idioma-g").removeClass("idioma-b");
+           }
+       });
+   });
   </script>
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-default menu-interno navbar-proteak-intop" id="menu-principal">
+    <nav class="navbar navbar-default menu-interno navbar-fixed-top navbar-proteak-intop" id="menu-principal">
   <div class="container-fluid ">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -127,19 +127,22 @@
   </div><!-- /.container-fluid -->
 </nav>
 <div class="container encabezadonosotros-img">
-<div class="row">
+<div class="row clase-baja">
   <div class="col-md-6 titulo-b2b" align="justify">
     <h1 class="titulo-interior">Experiencias <br>y servicios integrales</h1>
     <HR width="32%" align="left" class="separador-uno">
     <HR width="25%" align="right" class="separador-dos">
   </div>
-  <div class="col-md-6">
-    <img src="imagenes/nosotros.png" class="imagen-encabezado" alt="">
+  <div class="col-md-6 imagen-baja">
+    <img src="imagenes/nosotros.png" class="imagen-encabezado encabezado-nosotros" alt="">
+  </div>
+  <div class="col-md-12 flecha-int" align="center">
+    <a href="#sustentable"  align="center"><span class="glyphicon glyphicon-menu-down flecha-abajo abajo-int"></span></a>
   </div>
 </div>
 </div>  
-
-<div class="container">
+<a name="sustentable" href=""></a>
+<div class="container visible-lg">
   <div class="row nosotros" align="center">
     <div class="col-md-12">
       <h1 class="historia">Nuestra Historia</h1>
@@ -213,7 +216,94 @@
 
 </div>
 
+<!-- visible en tablets y en moviles -->
+<div class="container hidden-lg">
+  <div class="row nosotros" align="center">
+    <div class="col-md-12">
+      <h1 class="historia">Nuestra Historia</h1>
+      
+    </div>
+  </div>
+    <div class="row moviles-nosotros">
+      <div class="col-md-6 imagen-moviles"> 
+        <img src="imagenes/nosotros01.png" alt="" class="imagen-movil">
+      </div>
+      <div class="col-md-6 texto-moviles">
+        <p>Grupo Onest fue pionero en servicios logísticos, hace más de 25 años. Estos servicios los evolucionó hacia diseños de E-Commerce, iniciándose en éste nicho de mercado en 2011, en donde se recibió a la 'empresa brasileña Netshoes' para llevar a cabo el manejo del Fulfillment así como la distribución a nivel nacional.</p>
+      </div>
+      
+    </div>
+    <div class="row moviles-nosotros">
+      <div class="col-md-6 imagen-moviles"> 
+        <img src="imagenes/nosotros02.png" alt="" class="imagen-movil">
+      </div>
+      <div class="col-md-6 texto-moviles">
+        <p>Debido al éxito en los principales indicadores de E-Commerce, es que empezaron a llegar nuevos negocios al grupo con necesidades similares, altas expectativas en el servicio y en donde había una interacción directa con el consumidor final.</p>
+      </div>
+      
+    </div>
+    <div class="row moviles-nosotros">
+      <div class="col-md-6 imagen-moviles"> 
+        <img src="imagenes/nosotros03.png" alt="" class="imagen-movil">
+      </div>
+      <div class="col-md-6 texto-moviles">
+        <p>Así pues en 2015 se lleva a cabo el nacimiento de EC-Solutions (empresa hermana de Grupo Onest Logistics), para continuar enfocados en el “comercio digital” pero con un gran diferenciador: <br> “SOLUCIONES INTEGRALES PARA EL COMERCIO ELECTRÓNICO”.  Es decir, se incursiona en servicios enfocados para aquellas empresas o marcas que están buscando una solución “llave en mano”.  Éstas pueden ir desde apoyo en logística y distribución hasta aquellos que buscan la creación de una página de internet, servicios de call center, prevención de fraude y hasta asesoría en marketing digital y aspectos legales.</p>
+      </div>
+      
+    </div>
+    <div class="row moviles-nosotros">
+    <div class="col-md-6 imagen-moviles"> 
+      <img src="imagenes/nosotros04.png" alt="" class="imagen-movil">
+    </div>
+    <div class="col-md-6 texto-moviles">
+      <p>De ésta forma se unen dos pioneros en diferentes sectores.  Rubén Imán con más de 25 años de experiencia en servicios logísticos y Rafael Flores con más de 15 años de experiencia en retail e-commerce.</p>
+    </div>
+      
+    </div>
 
+  
+  <div class="row patners" align="center">
+    <div class="col-md-12 titulo-partners">
+      <h1>Nuestros Partners</h1>
+    </div>
+    <div class="col-md-3 ">
+      <div class="fondo-patners izq-pat">
+        <a href="http://fabricadesoluciones.com/" target="_blank">
+          
+          <img src="imagenes/logo01.png" alt="" class="logos-patners">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3 ">
+      <div class="fondo-patners">
+        <a href="http://www.wazomedia.com/" target="_blank">
+          
+          <img src="imagenes/logo02.png" alt="" class="logos-patners">
+        </a>
+        
+      </div>
+    </div>
+    <div class="col-md-3 ">
+      <div class="fondo-patners izq-pat">
+        <a href="http://elogia.net/" target="_blank">
+          
+          <img src="imagenes/logo03.png" alt="" class="logos-patners">
+        </a>
+        
+      </div>
+    </div>
+    <div class="col-md-3 ">
+      <div class="fondo-patners">
+        <a href="https://www.flickr.com/" target="_blank">
+          
+          <img src="imagenes/logo04.png" alt="" class="logos-patners">
+        </a>
+        
+      </div>
+    </div>
+  </div>
+
+</div>
  
         <!-- Footer -->
         <div class="container footer footer-interno" >
@@ -238,7 +328,11 @@
             </div>
             <div class="row">
                 <div class="col-md-12 footer-2" align="center">
-                    <p class="texto-footer2">&copy; 2016 EC Solutions - Derechos Reservados. Aviso de privacidad </p>
+                    <p class="texto-footer2">&copy; 2016 EC Solutions - Derechos Reservados. <a href="aviso_de_privacidad.html">
+                      
+                     Aviso de privacidad 
+                    </a>
+                   </p>
                     <a href="#arriba" class="flecha-arriba">
                         <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
                     </a>

@@ -32,64 +32,64 @@
         
     </script>
 <script>
-   // $(function(){
-   //  $(window).scroll(function(event) {
+   $(function(){
+    $(window).scroll(function(event) {
 
-   //         // scrollTop la posición del elemento
-   //         var position = $(window).scrollTop();
-   //         var menu = $("#menu-principal");
-   //         //var logodesktop = $("#logo-desktop");
-   //         //var logophone = $("#logo-phone");
-   //         var font = $("#font-blanco");
-   //         var fonta = $("#font-blancoa");
-   //         var fontb = $("#font-blancob");
-   //         var fontc = $("#font-blancoc");
-   //         var fontd = $("#font-blancod");
-   //         var fonte = $("#font-blancoe");
-   //         var correo = $("#font-blanca");
-   //         var caret = $("#font-carret");
-   //         var nav = $("#nav-bar");
-   //         var idioma = $("#idioma");
-   //         // dependiendo el lugar de la pantalla
-   //         // modificamos la clase del header
-   //         // par cambiar su color de fondo
-   //         if (position == 0) {
-   //             menu.addClass("navbar-proteak-intop").removeClass("navbar-proteak-inbot");
-   //             // logodesktop.addClass("esconde").removeClass("muestra");
-   //             // logophone.addClass("esconde").removeClass("muestra");
-   //             font.addClass("font-blanca").removeClass("sitioweb");
-   //             fonta.addClass("font-blanca").removeClass("sitioweb");
-   //             fontb.addClass("font-blanca").removeClass("sitioweb");
-   //             fontc.addClass("font-blanca").removeClass("sitioweb");
-   //             fontd.addClass("font-blanca").removeClass("sitioweb");
-   //             fonte.addClass("font-blanca").removeClass("sitioweb");
-   //             correo.addClass("font-blanca").removeClass("correo");
-   //             caret.addClass("font-blanca").removeClass("carret-normal");
-   //             nav.addClass("navbar-right-g").removeClass("navbar-right-b");
-   //             idioma.addClass("idioma-b").removeClass("idioma-g");
-   //         } else {
-   //             menu.addClass("navbar-proteak-inbot").removeClass("navbar-proteak-intop");
-   //             // logodesktop.addClass("muestra").removeClass("esconde");
-   //             // logophone.addClass("muestra").removeClass("esconde");
-   //             font.addClass("sitioweb").removeClass("font-blanca");
-   //             fonta.addClass("sitioweb").removeClass("font-blanca");
-   //             fontb.addClass("sitioweb").removeClass("font-blanca");
-   //             fontc.addClass("sitioweb").removeClass("font-blanca");
-   //             fontd.addClass("sitioweb").removeClass("font-blanca");
-   //             fonte.addClass("sitioweb").removeClass("font-blanca");
-   //             correo.addClass("correo").removeClass("font-blanca");
-   //             caret.addClass("carret-normal").removeClass("font-blanca");
-   //             nav.addClass("navbar-right-b").removeClass("navbar-right-g");
-   //             idioma.addClass("idioma-g").removeClass("idioma-b");
-   //         }
-   //     });
-   // });
+           // scrollTop la posición del elemento
+           var position = $(window).scrollTop();
+           var menu = $("#menu-principal");
+           //var logodesktop = $("#logo-desktop");
+           //var logophone = $("#logo-phone");
+           var font = $("#font-blanco");
+           var fonta = $("#font-blancoa");
+           var fontb = $("#font-blancob");
+           var fontc = $("#font-blancoc");
+           var fontd = $("#font-blancod");
+           var fonte = $("#font-blancoe");
+           var correo = $("#font-blanca");
+           var caret = $("#font-carret");
+           var nav = $("#nav-bar");
+           var idioma = $("#idioma");
+           // dependiendo el lugar de la pantalla
+           // modificamos la clase del header
+           // par cambiar su color de fondo
+           if (position == 0) {
+               menu.addClass("navbar-proteak-intop").removeClass("navbar-proteak-inbot");
+               // logodesktop.addClass("esconde").removeClass("muestra");
+               // logophone.addClass("esconde").removeClass("muestra");
+               font.addClass("font-blanca").removeClass("sitioweb");
+               fonta.addClass("font-blanca").removeClass("sitioweb");
+               fontb.addClass("font-blanca").removeClass("sitioweb");
+               fontc.addClass("font-blanca").removeClass("sitioweb");
+               fontd.addClass("font-blanca").removeClass("sitioweb");
+               fonte.addClass("font-blanca").removeClass("sitioweb");
+               correo.addClass("font-blanca").removeClass("correo");
+               caret.addClass("font-blanca").removeClass("carret-normal");
+               nav.addClass("navbar-right-g").removeClass("navbar-right-b");
+               idioma.addClass("idioma-b").removeClass("idioma-g");
+           } else {
+               menu.addClass("navbar-proteak-inbot").removeClass("navbar-proteak-intop");
+               // logodesktop.addClass("muestra").removeClass("esconde");
+               // logophone.addClass("muestra").removeClass("esconde");
+               font.addClass("sitioweb").removeClass("font-blanca");
+               fonta.addClass("sitioweb").removeClass("font-blanca");
+               fontb.addClass("sitioweb").removeClass("font-blanca");
+               fontc.addClass("sitioweb").removeClass("font-blanca");
+               fontd.addClass("sitioweb").removeClass("font-blanca");
+               fonte.addClass("sitioweb").removeClass("font-blanca");
+               correo.addClass("correo").removeClass("font-blanca");
+               caret.addClass("carret-normal").removeClass("font-blanca");
+               nav.addClass("navbar-right-b").removeClass("navbar-right-g");
+               idioma.addClass("idioma-g").removeClass("idioma-b");
+           }
+       });
+   });
   </script>
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-default menu-interno navbar-proteak-intop" id="menu-principal">
+    <nav class="navbar navbar-default menu-interno navbar-fixed-top navbar-proteak-intop" id="menu-principal">
   <div class="container-fluid ">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -138,46 +138,120 @@
 <div class="container contacto">
   <div class="row">
     <div class="col-md-12">
-      <h1>Contacto</h1>
+      <h1 class="color-contacto">Contacto</h1>
       
     </div>
     <div class="col-md-6">
-      <form>
+      
         <div class="form-group">
           <label for="nombre">Nombre:</label>
-          <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+          <input type="text" class="form-control" id="correo_nombre" placeholder="Nombre" name="correo_nombre">
         </div>
         <div class="form-group">
           <label for="email">Email:</label>
-          <input type="email" class="form-control" id="email" placeholder="example@contact.com">
+          <input type="email" class="form-control" id="correo_email" placeholder="example@contact.com" name="correo_email">
         </div>
         <div class="form-group">
           <label for="mensaje">Mensaje:</label>
-            <textarea class="form-control" rows="3" placeholder="mensaje"></textarea>
+            <textarea class="form-control" rows="3" placeholder="mensaje" name="correo_mensaje" id="correo_mensaje"></textarea>
            
         </div>
       </div>
       <div class="col-md-6">
         <div class="form-group">
           <label for="nombre">Empresa:</label>
-          <input type="text" class="form-control" id="empresa" placeholder="EC-Solutions">
+          <input type="text" class="form-control" id="correo_empresa" placeholder="EC-Solutions" name="correo_empresa">
         </div>
         <div class="form-group">
           <label for="nombre">Nicho:</label>
-          <input type="text" class="form-control" id="nicho" placeholder="Nicho">
+          <input type="text" class="form-control" id="correo_nicho" placeholder="Nicho" name="correo_nicho">
         </div>
         <div class="form-group">
           <label for="nombre">Tipo de servicio (solución):</label>
-          <input type="text" class="form-control" id="servicio" placeholder="Servicio">
+          <input type="text" class="form-control" id="correo_servicio" placeholder="Servicio" name="correo_servicio">
         </div>
         
-        <button type="submit" class="btn btn-default">Enviar</button>
-      </form>
+        <button id="submit">Enviar</button>
+      
     </div>
     
   </div>
 </div>
-
+<div id="alerts" style="position: fixed; top: 85px; width: 86%; z-index: 2;">
+  <!-- Aquí aparecen los alerts que regresa el procesar.php -->
+</div>
+<script>
+  $("#submit").click(function(e){
+    var emailreg = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
+      var cadena = /^([a-zA-Z]+)|([A-Za-z]+)/i;
+      var telefono = /^[0-9]*$/;
+      if( $("#correo_nombre").val() == "" || !cadena.test($("#correo_nombre").val()) ){
+          $("#correo_nombre").focus();
+          var posicion = $("#correo_nombre").offset().top;
+          posicion -= 170;
+          $("html, body").animate({scrollTop:posicion+"px"});
+          $("#alerts").html("<div class='alert alert-danger alert-dismissible' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button><p>Ingresa un Nombre válido.</p></div>");
+      }else if( $("#correo_email").val() == "" || !emailreg.test($("#correo_email").val()) ){
+          $("#correo_email").focus();
+          var posicion = $("#correo_email").offset().top;
+          posicion -= 170;
+          $("html, body").animate({scrollTop:posicion+"px"});
+          $("#alerts").html("<div class='alert alert-danger alert-dismissible' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button><p>Ingresa un E-mail válido.</p></div>");
+      }else if( $("#correo_empresa").val() == "" || !cadena.test($("#correo_empresa").val()) ){
+          $("#correo_empresa").focus();
+          var posicion = $("#correo_empresa").offset().top;
+          posicion -= 170;
+          $("html, body").animate({scrollTop:posicion+"px"});
+          $("#alerts").html("<div class='alert alert-danger alert-dismissible' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button><p>Ingresa una Empresa válida.</p></div>");
+      }else if( $("#correo_nicho").val() == "" || !cadena.test($("#correo_nicho").val()) ){
+          $("#correo_nicho").focus();
+          var posicion = $("#correo_nicho").offset().top;
+          posicion -= 170;
+          $("html, body").animate({scrollTop:posicion+"px"});
+          $("#alerts").html("<div class='alert alert-danger alert-dismissible' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button><p>Ingresa un Nicho válido.</p></div>");
+      }else if( $("#correo_servicio").val() == "" || !cadena.test($("#correo_servicio").val()) ){
+          $("#correo_servicio").focus();
+          var posicion = $("#correo_servicio").offset().top;
+          posicion -= 170;
+          $("html, body").animate({scrollTop:posicion+"px"});
+          $("#alerts").html("<div class='alert alert-danger alert-dismissible' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button><p>Ingresa un Servicio válido.</p></div>");
+      }else if( $("#correo_mensaje").val() == "" || !cadena.test($("#correo_mensaje").val()) ){
+          $("#correo_mensaje").focus();
+          var posicion = $("#correo_mensaje").offset().top;
+          posicion -= 170;
+          $("html, body").animate({scrollTop:posicion+"px"});
+          $("#alerts").html("<div class='alert alert-danger alert-dismissible' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button><p>Ingresa un Mensaje válido.</p></div>");
+      }else{
+        jQuery.ajax({
+            type: "POST",
+                url: "php/procesar.php",
+                data: {
+                  correo_nombre: $("#correo_nombre").val(),
+                  correo_email: $("#correo_email").val(),
+                  correo_empresa: $("#correo_empresa").val(),
+                  correo_nicho: $("#correo_nicho").val(),
+                  correo_servicio: $("#correo_servicio").val(),
+                  correo_mensaje: $("#correo_mensaje").val(),
+                },
+          success: function(resultado){
+              $('#alerts').html(resultado);
+              $("#correo_nombre").val("");
+              $("#correo_email").val("");
+              $("#correo_empresa").val("");
+              $("#correo_nicho").val("");
+              $("#correo_servicio").val("");
+              $("#correo_mensaje").val("");
+              $("html, body").animate({scrollTop:0+"px"});
+          },
+          error: function(resultado){
+              console.log(resultado);
+          }
+        });
+      }
+    });
+  
+</script>
+  
 
  
         <!-- Footer -->
@@ -203,7 +277,11 @@
             </div>
             <div class="row">
                 <div class="col-md-12 footer-2" align="center">
-                    <p class="texto-footer2">&copy; 2016 EC Solutions - Derechos Reservados. Aviso de privacidad </p>
+                    <p class="texto-footer2">&copy; 2016 EC Solutions - Derechos Reservados. <a href="aviso_de_privacidad.html">
+                      
+                     Aviso de privacidad 
+                    </a>
+                   </p>
                     <a href="#arriba" class="flecha-arriba">
                         <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
                     </a>

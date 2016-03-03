@@ -120,7 +120,7 @@ hr{
 	border-color: #F97F00;
 }
 #logo-phone{
-	width: 260px;
+	width: 130px;
 	margin-top: 4px;
 }
 .titulo-img{
@@ -209,7 +209,6 @@ ul.nav{
 		padding-bottom: 100px;
 	}*/
 
-
 	.texto-slider h2{
 		font-size: 18px;
 		text-align: center;
@@ -226,6 +225,25 @@ ul.nav{
 		/*margin-bottom: 50px;*/
 		height: auto;
 		width: 200px;
+	}
+}
+
+@media (max-width:900px){
+	.texto-slider h2{
+		font-size: 28px;
+
+	}
+	.texto-slider h1{
+		font-size: 36px;
+	}
+	/*
+	.texto-slider{
+		padding-bottom: 100px;
+	}*/
+	.images{
+		margin-bottom: 50px;
+		height: auto;
+		width: 230px;
 	}
 }
 @media (max-width:680px){
@@ -246,24 +264,7 @@ ul.nav{
 		width: 230px;
 	}
 }
-@media (max-width:900px){
-	.texto-slider h2{
-		font-size: 28px;
 
-	}
-	.texto-slider h1{
-		font-size: 36px;
-	}
-	/*
-	.texto-slider{
-		padding-bottom: 100px;
-	}*/
-	.images{
-		margin-bottom: 50px;
-		height: auto;
-		width: 230px;
-	}
-}
 #tronco-slider{
 	width: 200px;
 	height: 200px;
@@ -397,7 +398,8 @@ ul.nav{
 
 /*Estilos de capacidad*/
 .capacidad{
-	margin-top: 50px;
+	margin-top: 80px;
+	margin-bottom: 150px;
 }
 .capacidad-estadisticas{
 	margin-bottom: 50px;
@@ -619,7 +621,7 @@ progress{
 	padding-left: 0;
 	padding-right: 0;
 	width: 100%;
-	background-color: #F2F2F2;
+	/*background-color: #F2F2F2;*/
 	background-size: 100% 100%;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -642,7 +644,7 @@ progress{
     
   }
   .titulo-perfiles{
-  	color: #4D4D4D !important;
+  	color: white !important;
   }
   
   .tint:before {
@@ -728,7 +730,7 @@ iframe{
 /*Container división*/
 
 .division{
-	
+	height: 100%;
 	width: 100%;
 	background-image: url("../imagenes/fondo2.png");
 	background-size: cover;
@@ -736,6 +738,18 @@ iframe{
 	background-repeat: no-repeat;
 	margin: 0 auto;
 	
+}
+@media (max-width: 767px){
+	.division{
+	height: auto;
+	width: 100%;
+	background-image: url("../imagenes/fondo2.png");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	
+}
 }
 .division .logos-exitos{
 	margin-bottom: 150px;
@@ -908,29 +922,25 @@ input,textarea{
 /*B2B*/
 .encabezado-img{
 
-	background-image: url("../imagenes/B2B.jpg");
+	background-image: url("../imagenes/b2b.jpg");
 	background-repeat: no-repeat;
-	height: 600px;
+	height: 100%;
 	width: 100%;
+	background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 	/**/	
 }
-@media (max-width: 997px){
-	.encabezado-img{
-	margin-top: -106px;
-	background-image: url("../imagenes/B2B.jpg");
-	background-repeat: no-repeat;
-	height: 600px;
-	width: 100%;
-	/**/	
-}
-}
+
 .img-enc{
-	height: 300px;
+	height: 100%;
 	width: 100%;
 }
 #b2b { 
-			background: url("../imagenes/b2b-fondo.jpeg") 50% 0 fixed; 
-			height: auto;  
+			background: url("../imagenes/b2binterior.jpg") 50% 0 fixed; 
+			height: 100%;  
 			margin: 0 auto; 
 		    width: 100%; 
 		    position: relative; 
@@ -938,35 +948,73 @@ input,textarea{
 		    /*padding: 200px 0;*/
 		}
 .titulo-b2b{
-	margin-top: 240px;
+	margin-top: 340px;
 	color: white;
 	padding-left: 50px;
 }
 .imagen-encabezado{
-	margin-top: 80px;
+	width: 100%;
+	height: auto;
+	margin-top: 50px;
+}
+.clase-baja{
+	height: 100%;
+}
+.imagen-baja{
+	height: 100%;
+	
+}
+.flecha-int{
+	margin-top: -50px;
+	width: 100%;
+}
+.abajo-int{
+	
+	text-align: center !important;
+	
+	bottom: 0;
 }
 .imagen-encabezado-b2c{
-	margin-top: 124px;
+	bottom: 0;
+	position: absolute;
+	width: 550px;
+	height: auto;
+	max-width: 100%;
+	padding-left: 150px;
+
+}
+.encabezado-b2b{
+	position: absolute;
+	bottom: 0;
+	width: 100% !important;
+	
 }
 @media (max-width: 1090px){
 	.titulo-b2b{
 		
 	}
-	.titulo-interior{
-		font-size: 24px !important;
-		
-	}
+	
+	/*.imagen-encabezado{
+	height: 30vw;
+}*/
+/*.imagen-encabezado-b2c{
+	height: 30vw;
+
+}*/
 }
 @media (max-width: 675px){
 	.titulo-b2b{
 		
 	}
-	.titulo-interior{
-		font-size: 18px !important;
-		
-	}
+	
 }
 @media (max-width: 991px){
+	.titulo-b2b{
+	text-align: center;	
+	}
+	.encabezado-b2b{
+		display: none;
+	}
 		.imagen-encabezado{
 		display: none;
 	}
@@ -978,8 +1026,8 @@ input,textarea{
 	padding-bottom: 50px;
 }
 .titulo-interior-contenido{
-	margin-top: 80px;
-	color: #024468;
+	margin-top: 150px;
+	color: white;
 	text-align: center;
 }
 .contenedor-imagenes{
@@ -989,7 +1037,7 @@ input,textarea{
 .parrafo-interior{
 	margin-top: 30px;
 	margin-bottom: 30px;
-	color: #024468;
+	color: white;
 	text-align: justify;
 }
 .row{
@@ -1033,6 +1081,7 @@ input,textarea{
 .icono-sec3{
 	width: 150px;
 	height: 150px;
+	padding-bottom: 50px;
 }
 .contacto-b2b{
 	color: white;
@@ -1057,47 +1106,43 @@ input,textarea{
 }
 .encabezadocontacto-img{
 
-	background-image: url("../imagenes/CONTACTO.jpg");
+	background-image: url("../imagenes/contacto.jpg");
 	background-repeat: no-repeat;
-	height: 600px;
+	height: 100%;
 	width: 100%;
+	background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 	/**/	
 }
-@media (max-width: 997px){
-	.encabezadocontacto-img{
-	margin-top: -106px;
-	background-image: url("../imagenes/CONTACTO.jpg");
-	background-repeat: no-repeat;
-	height: 600px;
-	width: 100%;
-	/**/	
+.color-contacto{
+	color: #024468;
+	padding-bottom: 50px;
 }
-}
+
 
 /****************************/
 /*b2c*/
 /* make sidebar nav vertical */ 
 .encabezadob2c-img{
 
-	background-image: url("../imagenes/B2C.jpg");
+	background-image: url("../imagenes/b2c.jpg");
 	background-repeat: no-repeat;
-	height: 600px;
+	height: 100%;
 	width: 100%;
+	background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 	/**/	
 }
-@media (max-width: 997px){
-	.encabezadob2c-img{
-	margin-top: -106px;
-	background-image: url("../imagenes/B2C.jpg");
-	background-repeat: no-repeat;
-	height: 600px;
-	width: 100%;
-	/**/	
-}
-}
+
 #b2c { 
-			background: url("../imagenes/parallax-b2c.jpeg") 50% 0 fixed; 
-			height: auto;  
+			background: url("../imagenes/b2cinterior-p.jpg") 50% 0 fixed; 
+			height: 100%;  
 			margin: 0 auto; 
 		    width: 100%; 
 		    position: relative; 
@@ -1113,8 +1158,37 @@ input,textarea{
 	padding-left: 50px;
 	text-align: justify !important;
 }
+.image-slider-b2c{
+	height: 100% !important;
+	width: 100%;
+}
+@media (max-width: 1350px){
+	#carousel-text{
+	background-color: #024468;
+	color: white;
+	height: 338px;
+	padding-top: 0px;
+	padding-right: 50px;
+	padding-left: 50px;
+	text-align: justify !important;
+}
+}
 .contenedor-imagenes-b2c{
 	background-color: #024468;
+}
+.img-b2c{
+	padding: 0;
+	height: 338px;
+}
+@media (max-width: 991px){
+
+	.image-slider-b2c{
+	width: 100% !important;
+}
+.img-b2c{
+	width: 100% !important;
+	height: auto;
+}
 }
 #carrusel-circular li{
     border-radius: 100% !important;
@@ -1142,22 +1216,63 @@ input,textarea{
 /*parallax*/
 #home { 
 			background: url("../imagenes/servicios3.jpeg") 50% 0 fixed; 
+			height: 100%;  
+			margin: 0 auto; 
+		    width: 100%; 
+		    position: relative; 
+		    
+		    
+		}
+@media (max-width: 991px){
+	#home { 
+			background: url("../imagenes/home-moviles1.jpeg") 50% 0 fixed; 
 			height: auto;  
 			margin: 0 auto; 
 		    width: 100%; 
 		    position: relative; 
-		    /*box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
-		    /*padding: 200px 0;*/
+		    
 		}
-		#home2 { 
-			background: url("../imagenes/capacidad2.jpg") 50% 0 fixed; 
-			height: auto;  
-			margin: 0 auto; 
-		    width: 100%; 
-		    position: relative; 
-		    /*box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
-		    /*padding: 200px 0;*/
+}
+#home2 { 
+	background: url("../imagenes/capacidad2.jpg") 50% 0 fixed; 
+	height: 100%;  
+	margin: 0 auto; 
+    width: 100%; 
+    position: relative; 
+    
+    
+}
+
+#home2-moviles { 
+	background: url("../imagenes/capacidad2.jpg"); 
+	height: auto;  
+	margin: 0 auto; 
+	width: 100%; 
+	background-position: center center;
+	background-size: cover; 
+	background-repeat: no-repeat;
+}
+
+#home3 { 
+		background: url("../imagenes/perfiles2.jpeg") 50% 0 fixed; 
+		height: 100%;  
+		margin: 0 auto; 
+	    width: 100%; 
+	    position: relative; 
+	    
+	   
 		}
+
+#home3-moviles { 
+	background: url("../imagenes/perfiles2.jpeg"); 
+	height: auto;  
+	margin: 0 auto; 
+    width: 100%; 
+    background-position: center center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    
+	}
 
 		
 .popver-mensaje{
@@ -1203,27 +1318,25 @@ input,textarea{
 /**********/
 .encabezadomin-img{
 
-	background-image: url("../imagenes/distribuidores.jpeg");
+	background-image: url("../imagenes/portada-distribuidores.jpeg");
 	background-repeat: no-repeat;
-	height: 600px;
+	height: 100%;
 	width: 100%;
+	background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 	/**/	
 }
-@media (max-width: 997px){
-	.encabezadomin-img{
-	margin-top: -106px;
-	background-image: url("../imagenes/distribuidores.jpeg");
-	background-repeat: no-repeat;
-	height: 600px;
-	width: 100%;
-	/**/	
-}
-}
+
+
 .texto-minoristas{
 	color: black;
 	padding-left: 50px;
 	padding-right: 50px;
 	padding-top: 50px;
+	padding-bottom: 50px;
 	text-align: justify;
 }
 .texto-minoristas h2{
@@ -1249,64 +1362,60 @@ input,textarea{
 /*ruben*/
 .encabezadoruben-img{
 
-	background-image: url("../imagenes/RUBENIMAN.jpg");
+	background-image: url("../imagenes/rubeniman.jpg");
 	background-repeat: no-repeat;
-	height: 600px;
+	height: 100%;
 	width: 100%;
+	background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 	/**/	
 }
-@media (max-width: 997px){
-	.encabezadoruben-img{
-	margin-top: -106px;
-	background-image: url("../imagenes/RUBENIMAN.jpg");
-	background-repeat: no-repeat;
-	height: 600px;
-	width: 100%;
-}
-	/**/	
-}
+
 
 /*rafael*/
 .encabezadorafa-img{
 
-	background-image: url("../imagenes/RAFELFLORES.jpg");
+	background-image: url("../imagenes/rafaelflores.jpg");
 	background-repeat: no-repeat;
-	height: 600px;
+	height: 100%;
 	width: 100%;
+	background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 	/**/	
 }
-@media (max-width: 997px){
-	.encabezadorafa-img{
-	margin-top: -106px;
-	background-image: url("../imagenes/RAFELFLORES.jpg");
-	background-repeat: no-repeat;
-	height: 600px;
-	width: 100%;
-}
-	/**/	
-}
+
 
 /*nosotros*/
 .encabezadonosotros-img{
 
-	background-image: url("../imagenes/NOSOTROS.jpg");
+	background-image: url("../imagenes/nosotros.jpg");
 	background-repeat: no-repeat;
-	height: 600px;
+	height: 100%;
 	width: 100%;
+	background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 	/**/	
 }
-@media (max-width: 997px){
-	.encabezadonosotros-img{
-	margin-top: -106px;
-	background-image: url("../imagenes/NOSOTROS.jpg");
-	background-repeat: no-repeat;
-	height: 600px;
-	width: 100%;
-}
-	/**/	
+.encabezado-nosotros{
+	padding-top: 100px;
 }
 .nosotros{
 	margin-bottom: 300px;
+	padding-top: 80px;
+}
+@media (max-width: 1199px){
+	.nosotros{
+		margin-bottom: 20px;
+	}
 }
 .nosotros .historia{
 	color: #024468;
@@ -1401,8 +1510,8 @@ input,textarea{
 /**/
    .popover-all {
     /*display: inline-block;*/
-    
-    position: absolute;
+    position: fixed;
+    /*position: absolute;*/
     width: 100%;
     z-index: 1010;
     top: 0;
@@ -1457,3 +1566,34 @@ input,textarea{
   	padding: 0;
   	margin: 0;
   }
+  /*moviles nosotros*/
+.moviles-nosotros{
+	padding-bottom: 20px;
+	height: 250px;
+	width: 100%;
+	padding-top: 0;
+	margin: 0;
+}
+/*.imagen-moviles{
+	width: 100%;
+	padding: 0;
+}
+.texto-moviles{
+	width: 100%;
+	padding: 0;
+}*/
+@media (max-width: 991px) {
+	.moviles-nosotros{
+		height: auto;
+		text-align: center;
+	}
+	.texto-moviles{
+		padding-top: 20px;
+	}	
+}
+.imagen-movil{
+	width: 100%;
+}
+.mayusculas{
+	text-transform: uppercase;
+}

@@ -32,64 +32,64 @@
         
     </script>
 <script>
-   // $(function(){
-   //  $(window).scroll(function(event) {
+   $(function(){
+    $(window).scroll(function(event) {
 
-   //         // scrollTop la posición del elemento
-   //         var position = $(window).scrollTop();
-   //         var menu = $("#menu-principal");
-   //         //var logodesktop = $("#logo-desktop");
-   //         //var logophone = $("#logo-phone");
-   //         var font = $("#font-blanco");
-   //         var fonta = $("#font-blancoa");
-   //         var fontb = $("#font-blancob");
-   //         var fontc = $("#font-blancoc");
-   //         var fontd = $("#font-blancod");
-   //         var fonte = $("#font-blancoe");
-   //         var correo = $("#font-blanca");
-   //         var caret = $("#font-carret");
-   //         var nav = $("#nav-bar");
-   //         var idioma = $("#idioma");
-   //         // dependiendo el lugar de la pantalla
-   //         // modificamos la clase del header
-   //         // par cambiar su color de fondo
-   //         if (position == 0) {
-   //             menu.addClass("navbar-proteak-intop").removeClass("navbar-proteak-inbot");
-   //             // logodesktop.addClass("esconde").removeClass("muestra");
-   //             // logophone.addClass("esconde").removeClass("muestra");
-   //             font.addClass("font-blanca").removeClass("sitioweb");
-   //             fonta.addClass("font-blanca").removeClass("sitioweb");
-   //             fontb.addClass("font-blanca").removeClass("sitioweb");
-   //             fontc.addClass("font-blanca").removeClass("sitioweb");
-   //             fontd.addClass("font-blanca").removeClass("sitioweb");
-   //             fonte.addClass("font-blanca").removeClass("sitioweb");
-   //             correo.addClass("font-blanca").removeClass("correo");
-   //             caret.addClass("font-blanca").removeClass("carret-normal");
-   //             nav.addClass("navbar-right-g").removeClass("navbar-right-b");
-   //             idioma.addClass("idioma-b").removeClass("idioma-g");
-   //         } else {
-   //             menu.addClass("navbar-proteak-inbot").removeClass("navbar-proteak-intop");
-   //             // logodesktop.addClass("muestra").removeClass("esconde");
-   //             // logophone.addClass("muestra").removeClass("esconde");
-   //             font.addClass("sitioweb").removeClass("font-blanca");
-   //             fonta.addClass("sitioweb").removeClass("font-blanca");
-   //             fontb.addClass("sitioweb").removeClass("font-blanca");
-   //             fontc.addClass("sitioweb").removeClass("font-blanca");
-   //             fontd.addClass("sitioweb").removeClass("font-blanca");
-   //             fonte.addClass("sitioweb").removeClass("font-blanca");
-   //             correo.addClass("correo").removeClass("font-blanca");
-   //             caret.addClass("carret-normal").removeClass("font-blanca");
-   //             nav.addClass("navbar-right-b").removeClass("navbar-right-g");
-   //             idioma.addClass("idioma-g").removeClass("idioma-b");
-   //         }
-   //     });
-   // });
+           // scrollTop la posición del elemento
+           var position = $(window).scrollTop();
+           var menu = $("#menu-principal");
+           //var logodesktop = $("#logo-desktop");
+           //var logophone = $("#logo-phone");
+           var font = $("#font-blanco");
+           var fonta = $("#font-blancoa");
+           var fontb = $("#font-blancob");
+           var fontc = $("#font-blancoc");
+           var fontd = $("#font-blancod");
+           var fonte = $("#font-blancoe");
+           var correo = $("#font-blanca");
+           var caret = $("#font-carret");
+           var nav = $("#nav-bar");
+           var idioma = $("#idioma");
+           // dependiendo el lugar de la pantalla
+           // modificamos la clase del header
+           // par cambiar su color de fondo
+           if (position == 0) {
+               menu.addClass("navbar-proteak-intop").removeClass("navbar-proteak-inbot");
+               // logodesktop.addClass("esconde").removeClass("muestra");
+               // logophone.addClass("esconde").removeClass("muestra");
+               font.addClass("font-blanca").removeClass("sitioweb");
+               fonta.addClass("font-blanca").removeClass("sitioweb");
+               fontb.addClass("font-blanca").removeClass("sitioweb");
+               fontc.addClass("font-blanca").removeClass("sitioweb");
+               fontd.addClass("font-blanca").removeClass("sitioweb");
+               fonte.addClass("font-blanca").removeClass("sitioweb");
+               correo.addClass("font-blanca").removeClass("correo");
+               caret.addClass("font-blanca").removeClass("carret-normal");
+               nav.addClass("navbar-right-g").removeClass("navbar-right-b");
+               idioma.addClass("idioma-b").removeClass("idioma-g");
+           } else {
+               menu.addClass("navbar-proteak-inbot").removeClass("navbar-proteak-intop");
+               // logodesktop.addClass("muestra").removeClass("esconde");
+               // logophone.addClass("muestra").removeClass("esconde");
+               font.addClass("sitioweb").removeClass("font-blanca");
+               fonta.addClass("sitioweb").removeClass("font-blanca");
+               fontb.addClass("sitioweb").removeClass("font-blanca");
+               fontc.addClass("sitioweb").removeClass("font-blanca");
+               fontd.addClass("sitioweb").removeClass("font-blanca");
+               fonte.addClass("sitioweb").removeClass("font-blanca");
+               correo.addClass("correo").removeClass("font-blanca");
+               caret.addClass("carret-normal").removeClass("font-blanca");
+               nav.addClass("navbar-right-b").removeClass("navbar-right-g");
+               idioma.addClass("idioma-g").removeClass("idioma-b");
+           }
+       });
+   });
   </script>
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-default  navbar-proteak-intop menu-interno" id="menu-principal">
+    <nav class="navbar navbar-default navbar-fixed-top  navbar-proteak-intop menu-interno" id="menu-principal">
   <div class="container-fluid ">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -127,18 +127,21 @@
 </nav>
 
 <div class=" encabezado-img">
-<div class="row">
+<div class="row clase-baja">
   <div class="col-md-6 titulo-b2b" align="justify">
     <h1 class="titulo-interior">Una herramienta <br>tecnológica y customizada</h1>
     <HR width="32%" align="left" class="separador-uno">
     <HR width="25%" align="right" class="separador-dos">
   </div>
-  <div class="col-md-6">
-    <img src="imagenes/b2b.png" class="imagen-encabezado" alt="">
+  <div class="col-md-6 imagen-baja" >
+    <img src="imagenes/b2b.png" class=" encabezado-b2b" alt="">
+  </div>
+ <div class="col-md-12 flecha-int" align="center">
+    <a href="#sustentable"  align="center"><span class="glyphicon glyphicon-menu-down flecha-abajo abajo-int"></span></a>
   </div>
 </div>
 </div>  
-
+<a name="sustentable" href=""></a>
 <section id="b2b" data-speed="4" data-type="background" >
 <div class="container contenido-interior">
  <div class="row contenedor-imagenes">
@@ -215,7 +218,11 @@
             </div>
             <div class="row footer-2">
                 <div class="col-md-12" align="center">
-                    <p class="texto-footer2">&copy; 2016 EC Solutions - Derechos Reservados. Aviso de privacidad </p>
+                    <p class="texto-footer2">&copy; 2016 EC Solutions - Derechos Reservados. <a href="aviso_de_privacidad.html">
+                      
+                     Aviso de privacidad 
+                    </a>
+                   </p>
                     <a href="#arriba" class="flecha-arriba">
                         <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
                     </a>
